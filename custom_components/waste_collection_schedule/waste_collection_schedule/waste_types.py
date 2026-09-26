@@ -434,6 +434,84 @@ TEXTILES = WasteType(
     },
 )
 
+METAL = WasteType(
+    id="metal",
+    icon="mdi:nail",
+    color="#C2C8CC",
+    names={
+        "en": "Metal",
+        "de": "Metall",
+        "it": "Metallo",
+        "fr": "Métal",
+        "nl": "Metaal",
+        "sl": "Kovina",
+        "da": "Metal",
+    },
+    aliases={
+        "en": [
+            "iron",
+            "cans",
+        ],
+        "de": [
+            "eisen",
+            "dosen",
+        ],
+        "fr": ["fer", "boîtes de conserve"],
+        "it": ["ferro", "lattine"],
+        "nl": ["ijzer", "blikjes"],
+        "sl": ["likati", "pločevinke"],
+        "da": ["jern", "dåser", "aluminium"],
+    },
+)
+
+PLASTIC = WasteType(
+    id="plastic",
+    icon="mdi:recycle-variant",
+    color="#3587BD",
+    names={
+        "en": "Plastic",
+        "de": "Plastik",
+        "it": "Plastica",
+        "fr": "Plastique",
+        "nl": "Plastic",
+        "sl": "Plastika",
+        "da": "Plastik",
+    },
+    aliases={
+        "en": [],
+        "de": [],
+        "fr": [],
+        "it": [],
+        "nl": [],
+        "sl": [],
+        "da": [],
+    },
+)
+
+DRINK_CARTONS = WasteType(
+    id="drink_cartons",
+    icon="mdi:recycle-variant",
+    color="#5D9B75",
+    names={
+        "en": "Drink Cartons",
+        "de": "Getränkekartons",
+        "it": "Cartoni per bevande",
+        "fr": "Briques de boisson",
+        "nl": "Drankkartons",
+        "sl": "Kartonasta embalaža za pijačo",
+        "da": "Drikke Kartoner",
+    },
+    aliases={
+        "en": [],
+        "de": [],
+        "fr": [],
+        "it": [],
+        "nl": [],
+        "sl": [],
+        "da": [],
+    },
+)
+
 OTHER = WasteType(
     id="other",
     icon="mdi:calendar",
@@ -461,6 +539,9 @@ ALL_TYPES = [
     HAZARDOUS,
     ELECTRONICS,
     TEXTILES,
+    METAL,
+    PLASTIC,
+    DRINK_CARTONS,
     OTHER,
 ]
 
